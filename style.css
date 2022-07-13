@@ -1,0 +1,218 @@
+/* ------- GERAL ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+
+:root {
+  --title-font: 'Mukta', sans-serif;
+  
+  --primary-color: rgb(255, 130, 249);
+
+  font-size: 62.5%; /* 1rem == 10px */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+}
+
+body {
+  font-family: var(--title-font);
+}
+
+html.overflow-hidden,
+body.overflow-hidden {
+  overflow: hidden;
+}
+
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+#home {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(paisagem_nascer_do_sol.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80rem;
+
+  text-align: center;
+  margin: auto;
+
+  color: white;
+}
+
+#home header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#home header.bg-scroll {
+background-color: white;
+color: black;
+
+}
+
+#home header h1 {
+  font-family: var(--title-font);
+  font-size: 3rem;
+  text-align: left;
+  padding-left: 2rem;
+  text-transform: uppercase;
+}
+
+#home header h1 span {
+  color: var(--primary-color);
+}
+
+#home main img{
+  width: 20rem;
+  height: 20rem;
+
+  margin-top: 25rem;
+
+  border-radius: 10rem;
+  border: 2px solid white;
+  box-shadow: 0px 0px 10px black;
+}
+
+#home main h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 2rem;
+}
+
+#home #my-functions {
+  display: inline-block;
+  font-family: var(--title-font);
+  font-weight: 200;
+  text-transform: uppercase ;
+  font-size: 3rem;
+
+  box-sizing: initial;
+  padding:0 1rem;
+
+  border-right: 1px solid white;
+}
+
+#home #social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+}
+
+#home .social-medias {
+  padding: .5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2px;
+  border: .5px solid rgba(255, 255, 255, 0.193);
+}
+
+#home .social-medias:hover {
+  background-color: var(--primary-color);
+  transition: ease .8s;
+}
+
+#home .other-size {
+  padding: .9rem;
+}
+
+/* ------------- MENU --------------------- */
+
+#home header.menu-opened {
+  background-color: white;
+  color: black;
+
+  transition:all 1s;
+}
+
+#home header #open-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-right: 2rem;
+}
+
+#home header #open-menu.menu-opened{
+  display: none;
+  transition: display 1s;
+}
+
+#home header #open-menu:hover {
+  cursor: pointer;
+}
+
+#home header #open-menu div {
+  width: 30px;
+  height: 3px;
+
+  background-color: var(--primary-color);
+}
+
+#home header #close-menu.menu-closed {
+  display: none;
+}
+
+#home header #close-menu p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 5rem;
+  padding-bottom: .7rem;
+  padding-right: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+#home #menu {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+}
+
+#home #menu.menu-opened{
+  visibility: visible;
+  opacity: 1;
+  position: fixed;
+  top: 10rem;
+  color: black;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 6rem;
+  padding: 3rem;
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+
+  transition:all 1s;
+}
+
+/* -------- ABOUT --------------- */
+
+#about img {
+  width: 30rem;
+  margin: 3rem;
+  padding: 1rem;
+
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+
+}
+
+
