@@ -26,6 +26,9 @@ html.overflow-hidden,
 body.overflow-hidden {
   overflow: hidden;
 }
+section {
+  padding: 2rem;
+}
 
 li{
   list-style-type: none;
@@ -207,12 +210,14 @@ color: black;
 
 #about img {
   width: 30rem;
-  margin: 3rem;
   padding: 1rem;
 
   border-radius: 2px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-
 }
 
+#about h2 {
+  margin-top: 2rem;
+  
+}
 
