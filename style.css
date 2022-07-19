@@ -29,15 +29,15 @@ body.overflow-hidden {
   overflow: hidden;
 }
 section {
-  padding: 2rem;
+  padding: 5rem 2rem;
 }
 
 h2 {
   text-transform: uppercase;
   text-align: center;
   color: black;
-  margin: 3rem 0;
-  font: 400 2rem var(--title-font);
+  font: 400 2.5rem var(--title-font);
+  margin-bottom: 5rem;
 }
 
 h2 span {
@@ -58,7 +58,7 @@ a{
 
 /* ----------- HOME ------------------ */
 #home {
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(paisagem_nascer_do_sol.jpeg);
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(imagens/paisagem_nascer_do_sol.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -205,6 +205,7 @@ color: black;
   visibility: hidden;
   opacity: 0;
   height: 0;
+  padding: 0;
 }
 
 #menu.menu-opened{
@@ -261,7 +262,7 @@ color: black;
 }
 
 #about #buttons {
-  margin-top: 2rem;
+  margin: 3rem 0 2rem 0;
 }
 
 #about #buttons .b-1 {
@@ -361,6 +362,8 @@ color: black;
 #services .service-box g {
   fill: var(--primary-color);
 }
+
+/* ---------- SKILLS --------------- */
 
 
 
