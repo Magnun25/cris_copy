@@ -45,3 +45,22 @@ function changeHeaderBack() {
     header.classList.remove('menu-opened')
   }
 }
+
+// PORTFOLIO
+
+
+function putOpacity(){
+  let projectBoxText = document.querySelector('.project-box-text')
+  let image = document.querySelector('.image')
+
+  projectBoxText.classList.remove('opacity')
+  image.classList.add('opacity')
+}
+
+function removeOpacity(){
+  let projectBoxText = document.querySelector('.project-box-text')
+  let image = document.querySelector('.image')
+
+  projectBoxText.classList.add('opacity')
+  image.classList.remove('opacity')
+}
