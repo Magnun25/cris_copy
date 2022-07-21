@@ -46,21 +46,88 @@ function changeHeaderBack() {
   }
 }
 
+// SKILLS
+
+// tentar fazer usando parametros ...
+let showSkillBar = () => {
+  if (scrollY >= 2800) {
+    document.getElementById('skill-1').classList.add('full')
+    document.getElementById('skill-2').classList.add('full')
+    document.getElementById('skill-3').classList.add('full')
+    document.getElementById('skill-4').classList.add('full')
+  }
+}
+window.addEventListener('scroll', showSkillBar)
+
 // PORTFOLIO
 
 
-function putOpacity(){
-  let projectBoxText = document.querySelector('.project-box-text')
-  let image = document.querySelector('.image')
+let filterWeb = () => {
+  let app = document.getElementsByClassName('app')
+    for (i = 0; i <= app.length -1; i++) {
+      app[i].classList.add('hide-display')
+    }
 
-  projectBoxText.classList.remove('opacity')
-  image.classList.add('opacity')
+  let photo = document.getElementsByClassName('photo')
+    for (i = 0; i <= photo.length -1; i++) {
+      photo[i].classList.add('hide-display')
+    }
+
+    let web = document.getElementsByClassName('web')
+    for (i = 0; i <= web.length -1; i++) {
+      web[i].classList.remove('hide-display')
+    }
 }
 
-function removeOpacity(){
-  let projectBoxText = document.querySelector('.project-box-text')
-  let image = document.querySelector('.image')
+let filterApp = () => {
+  let web = document.getElementsByClassName('web')
+    for (i = 0; i <= web.length -1; i++) {
+      web[i].classList.add('hide-display')
+    }
 
-  projectBoxText.classList.add('opacity')
-  image.classList.remove('opacity')
+  let photo = document.getElementsByClassName('photo')
+    for (i = 0; i <= photo.length -1; i++) {
+      photo[i].classList.add('hide-display')
+    }
+
+    let app = document.getElementsByClassName('app')
+    for (i = 0; i <= app.length -1; i++) {
+      app[i].classList.remove('hide-display')
+    }
 }
+
+
+let filterPhoto = () => {
+  let app = document.getElementsByClassName('app')
+    for (i = 0; i <= app.length -1; i++) {
+      app[i].classList.add('hide-display')
+    }
+
+  let web = document.getElementsByClassName('web')
+    for (i = 0; i <= web.length -1; i++) {
+      web[i].classList.add('hide-display')
+    }
+
+    let photo = document.getElementsByClassName('photo')
+    for (i = 0; i <= photo.length -1; i++) {
+      photo[i].classList.remove('hide-display')
+    }
+}
+
+let showAll = () => {
+  let app = document.getElementsByClassName('app')
+    for (i = 0; i <= app.length -1; i++) {
+      app[i].classList.remove('hide-display')
+    }
+
+  let web = document.getElementsByClassName('web')
+    for (i = 0; i <= web.length -1; i++) {
+      web[i].classList.remove('hide-display')
+    }
+
+    let photo = document.getElementsByClassName('photo')
+    for (i = 0; i <= photo.length -1; i++) {
+      photo[i].classList.remove('hide-display')
+    }
+  }
+// colocar show-display

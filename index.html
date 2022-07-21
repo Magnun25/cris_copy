@@ -509,48 +509,67 @@
         <p>HTML5</p>
         <p>95%</p>
       </div>
-      <div class="progression-box"></div>
+      <div id="skill-1" class="progression-box"></div>
     </div>
     <div>
       <div class="progression-title-box">
-        <p>HTML5</p>
-        <p>95%</p>
+        <p>CSS</p>
+        <p>80%</p>
       </div>
-      <div class="progression-box"></div>
+      <div id="skill-2" class="progression-box"></div>
     </div>
     <div>
       <div class="progression-title-box">
-        <p>HTML5</p>
-        <p>95%</p>
+        <p>Javascript</p>
+        <p>50%</p>
       </div>
-      <div class="progression-box"></div>
+      <div id="skill-3" class="progression-box"></div>
     </div>
     <div>
       <div class="progression-title-box">
-        <p>HTML5</p>
-        <p>95%</p>
+        <p>Outros</p>
+        <p>10%</p>
       </div>
-      <div class="progression-box"></div>
+      <div id="skill-4" class="progression-box"></div>
     </div>
   </section>
   <section id="portfolio">
     <h2>Meu <span>Portifólio</span></h2>
     <div class="portfolio-menu">
-      <h3>All</h3>
-      <h3>WEB</h3>
-      <h3>APP DEVELOPMENT</h3>
-      <h3>PHOTOGRAPHY</h3>
+      <h3 onclick="showAll()">All</h3>
+      <h3 onclick="filterWeb()">WEB</h3>
+      <h3 onclick="filterApp()">APP-DEVELOPMENT</h3>
+      <h3 onclick="filterPhoto()">PHOTOGRAPHY</h3>
     </div>
     <div id="projects">
-      <div onmouseover="putOpacity()" onmouseout="removeOpacity()" class="project-box project-1">
-        <div class="project-box-text opacity">
+      <div class="project-box web">
+        <div class="project-box-text">
           <h4>Projeto um</h4>
           <p>Algum projeto aleatório</p>
         </div>
-        <img class="image" src="imagens/portfolio/projeto-1.jpeg" alt="Projeto específico"></div>
-      <div class="project-box"><img src="imagens/portfolio/projeto-2.jpeg" alt="Projeto específico"></div>
-      <div class="project-box"><img src="imagens/portfolio/projeto-3.jpeg" alt="Projeto específico"></div>
-      <div class="project-box"><img src="imagens/portfolio/projeto-4.jpeg" alt="Projeto específico"></div>
+        <img src="imagens/portfolio/projeto-1.jpeg" alt="Projeto específico">
+      </div>
+      <div class="project-box app">
+        <div class="project-box-text opacity">
+          <h4>Projeto dois</h4>
+          <p>Algum projeto aleatório</p>
+        </div>
+        <img src="imagens/portfolio/projeto-2.jpeg" alt="Projeto específico">
+      </div>
+      <div class="project-box photo">
+        <div class="project-box-text opacity">
+          <h4>Projeto três</h4>
+          <p>Algum projeto aleatório</p>
+        </div>
+        <img src="imagens/portfolio/projeto-3.jpeg" alt="Projeto específico">
+      </div>
+      <div class="project-box photo">
+        <div class="project-box-text opacity">
+          <h4>Projeto quatro</h4>
+          <p>Algum projeto aleatório</p>
+        </div>
+        <img src="imagens/portfolio/projeto-4.jpeg" alt="Projeto específico">
+      </div>
     </div>
     <div class="count-box">
       <div>
