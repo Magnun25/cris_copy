@@ -61,6 +61,20 @@ window.addEventListener('scroll', showSkillBar)
 
 // PORTFOLIO
 
+// const jobsArr = document.getElementsByClassName('project-box')
+
+// let filterJobs = (selector) => {
+//   return selector.classList[0]
+//  }
+
+// let conditionToFilter = () => {
+//   if (jobsArr[0].classList[1] === filterJobs) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
 
 let filterWeb = () => {
   let app = document.getElementsByClassName('app')
@@ -130,4 +144,9 @@ let showAll = () => {
       photo[i].classList.remove('hide-display')
     }
   }
+
+
+
+
+
 // colocar show-display
