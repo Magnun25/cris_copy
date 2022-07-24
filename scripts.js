@@ -62,14 +62,16 @@ window.addEventListener('scroll', showSkillBar)
 // PORTFOLIO
 
 const jobsArr = document.querySelectorAll('.project-box')
+let arrayJobsArr = Array.from(jobsArr)
 
 function filterJobs(selector) {
   let selectThem = selector.classList[0]
 
-  let newArr = jobsArr.filter(function(item) {
-    return item[index].classList[1] == selectThem
+  let newArr = arrayJobsArr.filter(function(item) {
+    return item.classList[1] == selectThem
     })
-  console.log(newArr)
+  
+  console.log(document.querySelector('.project-box').innerHTML = newArr)
  }
 
 
