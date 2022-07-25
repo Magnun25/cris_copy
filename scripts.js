@@ -70,11 +70,16 @@ function filterJobs(selector) {
   let newArr = arrayJobsArr.filter(function(item) {
     return item.classList[1] == selectThem
     })
-  
-  console.log(document.querySelector('.project-box').innerHTML = newArr)
- }
 
-
+  let projects = document.querySelector('#projects')
+  projects.innerHTML = ""
+  setTimeout(() => {
+    for (let i = 0; i < newArr.length; ++i) {
+      let item = newArr[i]
+      projects.append(item)
+    }
+  }, 200)
+}
 
 
 
