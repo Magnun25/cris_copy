@@ -447,16 +447,19 @@ color: black;
   margin-top: 3rem;
   margin-bottom: 3rem;
   position: relative;
+  top: 0;
+  left: 0;
 }
 
-#portfolio .project-box {
-  max-width: 35rem;
-  max-height: 24rem;
+#portfolio #projects .project-box {
   overflow: hidden;
   position: relative;
-  transform: scale(1);
   opacity: 1;
-  transition:transform 1s opacity 1s;
+  width: 33rem;
+  height: 24rem;
+  transform: scale(1);
+  transition: opacity .8s .4s, transform .8s .4s, width .4s, height .4s;
+  
 }
 
 
@@ -518,14 +521,23 @@ color: black;
 #portfolio .project-box:hover .project-box-text p {
   opacity: 1;
   transform: translateY(75px);
-  transition-property: opacity, transform;
-  transition-duration: 1s, 1s;
+  transition: all 1s ease;
 }
 
 #portfolio #projects .hide-display {
-  transform: scale(0);
   opacity: 0;
-  display: none;
+  transform: scale(0);
+  width: 0;
+  height: 0;
+  transition: opacity .8s, transform .8s, width .4s .8s, height .4s .8s;
 }
-/* ------- */
+
+
+
+
+/*------   EXPERIENCE    ------- */
+
+#experience {
+
+}
 
