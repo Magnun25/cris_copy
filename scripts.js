@@ -154,8 +154,64 @@ let showAll = () => {
     }
   }
 
+// contador do count-box
+const numberArray = document.querySelectorAll('.count-box h4')
 
+function doThis () {
+  if (scrollY >= 2400 && parseInt(numberArray[0].innerHTML) === 0) {
+    setInterval0()
+    setInterval1()
+    setInterval2()
+    setInterval3()
+  }
+}
 
+function setInterval0() {
+  let x = parseInt(numberArray[0].innerHTML)
+  var intervalo = window.setInterval(function () {
 
+     numberArray[0].innerHTML = x
 
-// colocar show-display
+     if (x++ === 100) {
+         window.clearInterval(intervalo);
+     }
+  }, 60);
+}
+
+function setInterval1() {
+  let x = parseInt(numberArray[1].innerHTML)
+  var intervalo = window.setInterval(function () {
+
+     numberArray[1].innerHTML = x
+
+     if (x++ === 50) {
+         window.clearInterval(intervalo);
+     }
+  }, 60);
+}
+
+function setInterval2() {
+  let x = parseInt(numberArray[2].innerHTML)
+  var intervalo = window.setInterval(function () {
+
+     numberArray[2].innerHTML = x
+
+     if (x++ === 10) {
+         window.clearInterval(intervalo);
+     }
+  }, 60);
+}
+
+function setInterval3() {
+  let x = parseInt(numberArray[3].innerHTML)
+  var intervalo = window.setInterval(function () {
+
+     numberArray[3].innerHTML = x
+
+     if (x++ === 20) {
+         window.clearInterval(intervalo);
+     }
+  }, 60);
+}
+
+window.addEventListener('scroll', doThis)

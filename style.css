@@ -29,15 +29,15 @@ body.overflow-hidden {
   overflow: hidden;
 }
 section {
-  padding: 5rem 2rem;
+  padding: 8rem 2rem;
 }
 
 h2 {
   text-transform: uppercase;
   text-align: center;
   color: black;
-  font: 400 2.5rem var(--title-font);
-  margin-bottom: 5rem;
+  font: 400 4rem var(--title-font);
+  margin-bottom: 8rem;
 }
 
 h2 span {
@@ -233,6 +233,7 @@ color: black;
 
 /* -------- ABOUT --------------- */
 
+
 #about img {
   width: 30rem;
   padding: 1rem;
@@ -425,6 +426,9 @@ color: black;
 }
 
 /* -------- PORTFOLIO ------------- */
+#portfolio {
+  padding-bottom: 0;
+}
 
 #portfolio .portfolio-menu  {
   display: flex;
@@ -532,12 +536,102 @@ color: black;
   transition: opacity .8s, transform .8s, width .4s .8s, height .4s .8s;
 }
 
+#portfolio .count-box {
+  color: white;
+  font-size: 2.5rem;
+  margin-top: 10rem;
+  margin-left: -2rem;
+  text-align: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+
+
+
+ 
+
+  width: 100vw;
+  height: 80rem;
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(imagens/count_box.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+#portfolio .count-box h4 {
+  color: var(--primary-color);
+  font-size: 4rem;
+  font-weight: 500;
+}
 
 
 
 /*------   EXPERIENCE    ------- */
 
-#experience {
+#experience .experiences {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#experience .experience-box {
+  max-width: 50rem;
+  max-height: 30rem;
+  margin: 2rem;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.100);
+}
+
+
+#experience .experience-box h4 {
+  color: var(--primary-color);
+}
+
+#experience .experience-box {
+  padding: 4rem 2rem;
+  margin: 0 2rem;
+}
+
+/* -------- TESTIMONIALS ------------ */
+
+#testimonials {
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(imagens/testimonials-bg.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
 }
+
+#testimonials h2 {
+  color: white;
+}
+#testimonials .testimonial {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+#testimonials .testimonial-box {
+  background-color: white;
+
+  max-width: 36rem;
+  max-height: 34rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+#testimonials .testimonial-hide {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+
+
 
