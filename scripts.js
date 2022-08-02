@@ -1,4 +1,18 @@
 // Criar uma função para adicionar e retirar as classes menu-closed e menu-opened
+
+window.addEventListener('scroll', onScroll)
+
+
+f
+
+
+
+
+
+
+
+
+
 const header = document.querySelector('#home header')
 const open_Menu = document.querySelector('#open-menu')
 const close_Menu = document.querySelector('#close-menu')
