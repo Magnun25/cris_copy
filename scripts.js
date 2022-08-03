@@ -3,17 +3,46 @@
 window.addEventListener('scroll', onScroll)
 
 
-f
+function onScroll () {
+  changeHeader()
+  changeHeaderBack()
+  showSkillBar()
+  // activeMenuAtCurrentSection(home)
+  // activeMenuAtCurrentSection(about)
+  // activeMenuAtCurrentSection(services)
+  // activeMenuAtCurrentSection(skills)
+  // activeMenuAtCurrentSection(portfolio)
+  // activeMenuAtCurrentSection(experience)
+  // activeMenuAtCurrentSection(testimonials)
+  // activeMenuAtCurrentSection(contact)
+}
+
+
+
+function activeMenuAtCurrentSection(section) {
+  const targetLine = scrollY + innerHeight / 2
+  
+  const sectionTop = section.offsetTop
+  const sectionHeight = section.offsetHeight
+
+  const sectionTopReachOrPassedTargetline = targetLine >= sectionTop
+
+  const sectionEndsAt = sectionTop + sectionHeight
+
+  const sectionEndPassedTargetline = sectionEndsAt <= targetLine
+
+  const sectionBounderies = sectionTopReachOrPassedTargetline && !sectionEndPassedTargetline
+
+  const sectionId = section.getAttribute('id')
+  // continuar depois que fizer o site para pc
+
+
+}
 
 
 
 
-
-
-
-
-
-const header = document.querySelector('#home header')
+const header = document.querySelector('#header header')
 const open_Menu = document.querySelector('#open-menu')
 const close_Menu = document.querySelector('#close-menu')
 const menu = document.querySelector('#menu')
@@ -45,8 +74,6 @@ function closeMenu() {
   body.classList.remove('overflow-hidden')
 
 }
-document.addEventListener('scroll', changeHeader)
-document.addEventListener('scroll', changeHeaderBack)
 
 function changeHeader() {
   if (scrollY >= 100) {
@@ -71,7 +98,6 @@ let showSkillBar = () => {
     document.getElementById('skill-4').classList.add('full')
   }
 }
-window.addEventListener('scroll', showSkillBar)
 
 // PORTFOLIO
 

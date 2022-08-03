@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section id="home">
+  <section id="header">
     <header class="">
       <h1>Cristiane <span>Oliveira</span></h1>
       <div onclick="openMenu()" id="open-menu" class="">
@@ -20,6 +20,19 @@
         <p>x</p>
       </div>
     </header>
+  </section>
+  <section id="menu" class="">
+    <ul>
+      <li><a onclick="closeMenu()" href="#home">HOME</a></li>
+      <li><a onclick="closeMenu()" href="#about">SOBRE MIM</a></li>
+      <li><a onclick="closeMenu()" href="#services">SERVIÇOS</a></li>
+      <li><a onclick="closeMenu()" href="#portfolio">PORTIFÓLIO</a></li>
+      <li><a onclick="closeMenu()" href="#experience">EXPERIENCIA</a></li>
+      <li><a onclick="closeMenu()" href="#testimonials">DEPOIMENTOS</a></li>
+      <li><a onclick="closeMenu()" href="#contact">CONTATO</a></li>
+    </ul>
+  </section>
+  <section id="home">
     <main>
       <img src="imagens/cris_perfil.png" alt="Foto de perfil" class="">
       <h3>Eu sou a Cris</h3>
@@ -29,7 +42,7 @@
           <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
           <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
           <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             viewBox="0 0 112.196 112.196" style="enable-background:new 0 0 112.196 112.196;" xml:space="preserve">
+              viewBox="0 0 112.196 112.196" style="enable-background:new 0 0 112.196 112.196;" xml:space="preserve">
           <g>
             <circle style="fill:#3b589800;" cx="56.098" cy="56.098" r="56.098"/>
             <path style="fill:#FFFFFF;" d="M70.201,58.294h-10.01v36.672H45.025V58.294h-7.213V45.406h7.213v-8.34
@@ -69,7 +82,7 @@
         <a href="#" class="social-medias other-size"><?xml version="1.0" encoding="iso-8859-1"?>
           <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+              viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
           <path style="fill:#ffffff;" d="M65.741,0.021H446.29c36.154,0,65.71,29.566,65.71,65.72V446.29c0,36.144-29.556,65.69-65.71,65.69
             H65.741C29.587,511.98,0,482.432,0,446.29V65.741C0,29.587,29.587,0.021,65.741,0.021z M372.985,56.882
             c-12.694,0-23.049,10.395-23.049,23.083v55.149c0,12.692,10.354,23.064,23.049,23.064h57.861c12.674,0,23.05-10.371,23.05-23.064
@@ -114,7 +127,7 @@
           <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
           <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
           <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             viewBox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
+              viewBox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
           <g>
             <rect x="0" y="0" style="fill:#0085b100;" width="455.731" height="455.731"/>
             <g>
@@ -166,7 +179,7 @@
           <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
           <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
           <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             viewBox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
+              viewBox="0 0 455.731 455.731" style="enable-background:new 0 0 455.731 455.731;" xml:space="preserve">
           <g>
             <rect x="0" y="0" style="fill:#1bd74100;" width="455.731" height="455.731"/>
             <g>
@@ -213,24 +226,13 @@
           </g>
           <g>
           </g>
-          </svg>
-          </a>
-      </div>
-    </main>
-  </section>
-  <section id="menu" class="">
-    <ul>
-      <li><a onclick="closeMenu()" href="#home">HOME</a></li>
-      <li><a onclick="closeMenu()" href="#about">SOBRE MIM</a></li>
-      <li><a onclick="closeMenu()" href="#services">SERVIÇOS</a></li>
-      <li><a onclick="closeMenu()" href="#portfolio">PORTIFÓLIO</a></li>
-      <li><a onclick="closeMenu()" href="#experience">EXPERIENCIA</a></li>
-      <li><a onclick="closeMenu()" href="#testimonials">DEPOIMENTOS</a></li>
-      <li><a onclick="closeMenu()" href="#contact">CONTATO</a></li>
-    </ul>
+        </svg>
+      </a>
+    </div>
+  </main>
   </section>
   <section id="about">
-    <img src="imagens/cris_about.png" alt="Cristiane Oliveira">
+  <img src="imagens/cris_about.png" alt="Cristiane Oliveira">
     <h2>Copywriter</h2>
     <p>Eu sou a <strong>Cristiane Oliveira</strong>, estudo copywriting. Eos, incidunt numquam facilis quae aperiam quod a illo itaque dolorem amet iusto alias nesciunt tempore! Minus quaerat quibusdam quo. Quod, consequatur.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo perferendis cumque dolorem reiciendis odit nam quo nesciunt, perspiciatis odio quia unde similique tenetur suscipit libero molestiae vel minus architecto? Quidem.</p>
@@ -656,7 +658,7 @@
         <p><span>CEO, ABC Network</span></p>
         <img src="#" alt="Foto de perfil do depoente">
       </div>
-      <div class="testimonial-box">
+      <div class="testimonial-box testimonial-hide">
         <?xml version="1.0" standalone="no"?>
         <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
         "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
@@ -690,7 +692,7 @@
         <p><span>CEO, ABC Network</span></p>
         <img src="#" alt="Foto de perfil do depoente">
       </div>
-      <div class="testimonial-box">
+      <div class="testimonial-box testimonial-hide">
         <?xml version="1.0" standalone="no"?>
         <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
         "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
@@ -758,9 +760,11 @@
         <img src="#" alt="Foto de perfil do depoente">
       </div>
     </div>
-    <div>
-      <div></div>
-      <div></div>
+    <div class="change-testimonials">
+      <div class="next-testimonial"></div>
+      <div class="next-testimonial"></div>
+      <div class="next-testimonial"></div>
+      <div class="next-testimonial"></div>
     </div>
   </section>
   <section id="contact">
