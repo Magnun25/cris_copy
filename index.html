@@ -769,10 +769,13 @@
   </section>
   <section id="contact">
     <h2>Fale <span>comigo!</span></h2>
-    <form action="">
-      <input type="text">
-      <input type="text">
-      <input type="text">
+    <form action="" method="get">
+      <input type="text" name="name" placeholder="Digite seu nome completo" >
+      <label for="name">Digite o seu nome!</label>
+      <input type="email" name="email" placeholder="Digite seu melhor email">
+      <label for="email">Digite um email valido!</label>
+      <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+      <label for="message">Deixe sua mensagem!</label>
       <button> ENVIAR</button>
     </form>
     <div class="contact-box">
