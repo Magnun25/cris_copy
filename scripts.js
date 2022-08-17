@@ -258,10 +258,30 @@ window.addEventListener('scroll', doThis)
 
 // ----------- TESTIMONIAL -----------------
 
-let next = document.querySelectorAll('.next-testimonial')
-let boxes = document.querySelectorAll('.testimonial-box')
-for(i in next) {
-  next[i].addEventListener('click', ()=>{
-    boxes[i].style.display = "block"
-  })
-}
+const next = document.querySelectorAll('.next-testimonial')
+const boxes = document.querySelectorAll('.testimonial-box')
+
+next[0].addEventListener('click', ()=>{
+  boxes[0].style.display = "block"
+  boxes[1].style.display = "none"
+  boxes[2].style.display = "none"
+  boxes[3].style.display = "none"
+})
+next[1].addEventListener('click', ()=>{
+  boxes[0].style.display = "none"
+  boxes[1].style.display = "block"
+  boxes[2].style.display = "none"
+  boxes[3].style.display = "none"
+})
+next[2].addEventListener('click', ()=>{
+  boxes[0].style.display = "none"
+  boxes[1].style.display = "none"
+  boxes[2].style.display = "block"
+  boxes[3].style.display = "none"
+})
+next[3].addEventListener('click', ()=>{
+  boxes[0].style.display = "none"
+  boxes[1].style.display = "none"
+  boxes[2].style.display = "none"
+  boxes[3].style.display = "block"
+})
