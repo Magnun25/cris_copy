@@ -7,6 +7,7 @@ function onScroll () {
   changeHeader()
   changeHeaderBack()
   showSkillBar()
+  showBtnToTop()
   // activeMenuAtCurrentSection(home)
   // activeMenuAtCurrentSection(about)
   // activeMenuAtCurrentSection(services)
@@ -17,6 +18,15 @@ function onScroll () {
   // activeMenuAtCurrentSection(contact)
 }
 
+function showBtnToTop() {
+  if (scrollY > 715) {
+    buttonToTop.style.opacity = "1"
+    buttonToTop.style.visibility = "visible"
+  } else if (scrollY <= 715 ) {
+    buttonToTop.style.opacity = "0"
+    buttonToTop.style.visibility = "hidden"
+  }
+}
 
 
 function activeMenuAtCurrentSection(section) {
@@ -198,7 +208,7 @@ let showAll = () => {
 const numberArray = document.querySelectorAll('.count-box h4')
 
 function doThis () {
-  if (scrollY >= 2400 && parseInt(numberArray[0].innerHTML) === 0) {
+  if (scrollY >= 2400 && parseInt(numberArray[0].innerHTML) == 0) {
     setInterval0()
     setInterval1()
     setInterval2()
@@ -215,7 +225,7 @@ function setInterval0() {
      if (x++ === 100) {
          window.clearInterval(intervalo);
      }
-  }, 60);
+  }, 100);
 }
 
 function setInterval1() {
@@ -227,7 +237,7 @@ function setInterval1() {
      if (x++ === 50) {
          window.clearInterval(intervalo);
      }
-  }, 60);
+  }, 100);
 }
 
 function setInterval2() {
@@ -239,7 +249,7 @@ function setInterval2() {
      if (x++ === 10) {
          window.clearInterval(intervalo);
      }
-  }, 60);
+  }, 100);
 }
 
 function setInterval3() {
@@ -251,7 +261,7 @@ function setInterval3() {
      if (x++ === 20) {
          window.clearInterval(intervalo);
      }
-  }, 60);
+  }, 100);
 }
 
 window.addEventListener('scroll', doThis)
