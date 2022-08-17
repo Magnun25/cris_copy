@@ -255,3 +255,13 @@ function setInterval3() {
 }
 
 window.addEventListener('scroll', doThis)
+
+// ----------- TESTIMONIAL -----------------
+
+let next = document.querySelectorAll('.next-testimonial')
+let boxes = document.querySelectorAll('.testimonial-box')
+for(i in next) {
+  next[i].addEventListener('click', ()=>{
+    boxes[i].style.display = "block"
+  })
+}

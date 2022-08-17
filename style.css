@@ -631,6 +631,7 @@ color: black;
 }
 #testimonials .testimonial-box {
   background-color: white;
+  display: none;
 
   max-width: 36rem;
   max-height: 34rem;
@@ -645,10 +646,6 @@ color: black;
 
 #testimonials svg path {
   fill: var(--primary-color);
-}
-
-#testimonials .testimonial-hide {
-  display: none;
 }
 
 #testimonials .change-testimonials {
