@@ -793,3 +793,29 @@ footer p {
 footer span {
   color: var(--primary-color);
 }
+
+@media (min-width: 768px) {
+  #menu {
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    right: 1.5rem;
+    top: 6rem;
+    z-index: 10;
+    color: white;
+  }
+
+  #menu ul{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .colorMenu {
+    color: white;
+  }
+
+  #open-menu {
+    visibility: hidden;
+    opacity: 0;
+  }
+}

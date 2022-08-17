@@ -88,12 +88,18 @@ function closeMenu() {
 function changeHeader() {
   if (scrollY >= 100) {
     header.classList.add('menu-opened')
+    document.querySelectorAll('#menu a').forEach(item, ()=>{
+      item.classList.remove('colorMenu')
+    })
   }
 }
 
 function changeHeaderBack() {
   if (scrollY < 100) {
     header.classList.remove('menu-opened')
+    document.querySelectorAll('#menu a').forEach(item, ()=>{
+      item.classList.add('colorMenu')
+    })
   }
 }
 
