@@ -20,11 +20,9 @@ function onScroll () {
 const btnToTop = document.querySelector('#btn-to-top')
 function showBtnToTop() {
   if (scrollY > 715) {
-    btnToTop.style.opacity = "1"
-    btnToTop.style.visibility = "visible"
+    btnToTop.style.transform = "translateY(0%)"
   } else if (scrollY <= 715 ) {
-    btnToTop.style.opacity = "0"
-    btnToTop.style.visibility = "hidden"
+    btnToTop.style.transform = "translateY(130%)"
   }
 }
 
@@ -307,14 +305,13 @@ ScrollReveal({
   origin: 'top',
   distance: '30px',
   duration: 700,
-}).reveal(`#header, 
-#home, 
+}).reveal(`#home, 
 #about, 
 #services,
 #skills,
 #portifolio,
 #experience,
-#testimonials,,
+#testimonials,
 #contact,
 footer
 `);

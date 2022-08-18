@@ -24,6 +24,9 @@
   padding: 0;
   box-sizing: border-box ;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: var(--title-font);
@@ -72,9 +75,8 @@ a{
   height: 6rem;
   border-radius: 50%;
   background-color: var(--primary-color);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease;
+  transform: translateY(130%);
+  transition: transform 0.5s ease;
 }
 
 .material-symbols-outlined {
@@ -116,7 +118,7 @@ a{
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 11;
 }
 
 #header header.bg-scroll {
@@ -150,6 +152,7 @@ color: black;
 
   color: white;
   margin-top: -10rem;
+  visibility: hidden;
 }
 
 
