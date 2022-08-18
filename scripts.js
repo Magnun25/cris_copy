@@ -274,31 +274,19 @@ window.addEventListener('scroll', doThis)
 // ----------- TESTIMONIAL -----------------
 
 const next = document.querySelectorAll('.next-testimonial')
-const boxes = document.querySelectorAll('.testimonial-box')
+const box = document.querySelector('.testimonial')
 
 next[0].addEventListener('click', ()=>{
-  boxes[0].style.display = "block"
-  boxes[1].style.display = "none"
-  boxes[2].style.display = "none"
-  boxes[3].style.display = "none"
+  box.style.transform = "translateX(0)"
 })
 next[1].addEventListener('click', ()=>{
-  boxes[0].style.display = "none"
-  boxes[1].style.display = "block"
-  boxes[2].style.display = "none"
-  boxes[3].style.display = "none"
+  box.style.transform = "translateX(-410px)"
 })
 next[2].addEventListener('click', ()=>{
-  boxes[0].style.display = "none"
-  boxes[1].style.display = "none"
-  boxes[2].style.display = "block"
-  boxes[3].style.display = "none"
+  box.style.transform = "translateX(-820px)"
 })
 next[3].addEventListener('click', ()=>{
-  boxes[0].style.display = "none"
-  boxes[1].style.display = "none"
-  boxes[2].style.display = "none"
-  boxes[3].style.display = "block"
+  box.style.transform = "translateX(-1230px)"
 })
 
 ScrollReveal({

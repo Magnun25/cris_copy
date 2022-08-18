@@ -26,6 +26,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -672,16 +673,15 @@ color: black;
 }
 #testimonials .testimonial {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 5rem;
+  transform: translateX(0);
+  transition: 0.5s ease;
 }
 #testimonials .testimonial-box {
   background-color: white;
-  display: none;
-
-  max-width: 36rem;
-  max-height: 34rem;
+  min-width: 36rem;
+  min-height: 34rem;
   padding: 2rem;
   border-radius: 5px;
 }
