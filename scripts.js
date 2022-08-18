@@ -17,14 +17,14 @@ function onScroll () {
   // activeMenuAtCurrentSection(testimonials)
   // activeMenuAtCurrentSection(contact)
 }
-
+const btnToTop = document.querySelector('#btn-to-top')
 function showBtnToTop() {
   if (scrollY > 715) {
-    buttonToTop.style.opacity = "1"
-    buttonToTop.style.visibility = "visible"
+    btnToTop.style.opacity = "1"
+    btnToTop.style.visibility = "visible"
   } else if (scrollY <= 715 ) {
-    buttonToTop.style.opacity = "0"
-    buttonToTop.style.visibility = "hidden"
+    btnToTop.style.opacity = "0"
+    btnToTop.style.visibility = "hidden"
   }
 }
 
@@ -88,7 +88,8 @@ function closeMenu() {
 function changeHeader() {
   if (scrollY >= 100) {
     header.classList.add('menu-opened')
-    document.querySelectorAll('#menu a').forEach(item, ()=>{
+
+    document.querySelectorAll('#menu a').forEach((item)=>{
       item.classList.remove('colorMenu')
     })
   }
@@ -97,7 +98,7 @@ function changeHeader() {
 function changeHeaderBack() {
   if (scrollY < 100) {
     header.classList.remove('menu-opened')
-    document.querySelectorAll('#menu a').forEach(item, ()=>{
+    document.querySelectorAll('#menu a').forEach((item)=>{
       item.classList.add('colorMenu')
     })
   }
@@ -301,3 +302,19 @@ next[3].addEventListener('click', ()=>{
   boxes[2].style.display = "none"
   boxes[3].style.display = "block"
 })
+
+ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+}).reveal(`#header, 
+#home, 
+#about, 
+#services,
+#skills,
+#portifolio,
+#experience,
+#testimonials,,
+#contact,
+footer
+`);
