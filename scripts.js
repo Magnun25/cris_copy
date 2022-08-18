@@ -7,6 +7,7 @@ function onScroll () {
   changeHeader()
   changeHeaderBack()
   showSkillBar()
+  doThis()
   showBtnToTop()
   // activeMenuAtCurrentSection(home)
   // activeMenuAtCurrentSection(about)
@@ -269,24 +270,25 @@ function setInterval3() {
   }, 100);
 }
 
-window.addEventListener('scroll', doThis)
-
 // ----------- TESTIMONIAL -----------------
 
 const next = document.querySelectorAll('.next-testimonial')
 const box = document.querySelector('.testimonial')
 
 next[0].addEventListener('click', ()=>{
-  box.style.transform = "translateX(0)"
+  box.style.transform = "translateX(820px)"
 })
 next[1].addEventListener('click', ()=>{
-  box.style.transform = "translateX(-410px)"
+  box.style.transform = "translateX(410px)"
 })
 next[2].addEventListener('click', ()=>{
-  box.style.transform = "translateX(-820px)"
+  box.style.transform = "translateX(0px)"
 })
 next[3].addEventListener('click', ()=>{
-  box.style.transform = "translateX(-1230px)"
+  box.style.transform = "translateX(-410px)"
+})
+next[4].addEventListener('click', ()=>{
+  box.style.transform = "translateX(-820px)"
 })
 
 ScrollReveal({

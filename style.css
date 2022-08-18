@@ -101,6 +101,10 @@ a{
   left: 50%;
   transform: translate(-50%,-50%);
 }
+.hide {
+  visibility: visible;
+  opacity: 1;
+}
 
 
 /* --------- HEADER ------------------ */
@@ -673,7 +677,7 @@ color: black;
 }
 #testimonials .testimonial {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 5rem;
   transform: translateX(0);
   transition: 0.5s ease;
@@ -798,6 +802,13 @@ footer span {
 }
 
 @media (min-width: 768px) {
+  /* ---------- GERAL ------------- */
+  
+  .hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+
   #menu {
     visibility: visible;
     opacity: 1;
