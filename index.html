@@ -23,13 +23,14 @@
     </header>
     <section id="menu" class="">
       <ul>
-        <li><a class="colorMenu" onclick="closeMenu()" href="#home">HOME</a></li>
+        <li><a class="colorMenu homeColor" onclick="closeMenu()" href="#home">HOME</a></li>
         <li><a class="colorMenu" onclick="closeMenu()" href="#about">SOBRE MIM</a></li>
-        <li><a class="colorMenu" onclick="closeMenu()" href="#services">SERVIÇOS</a></li>
-        <li><a class="colorMenu" onclick="closeMenu()" href="#portfolio">PORTIFÓLIO</a></li>
-        <li><a class="colorMenu" onclick="closeMenu()" href="#experience">EXPERIENCIA</a></li>
-        <li><a class="colorMenu" onclick="closeMenu()" href="#testimonials">DEPOIMENTOS</a></li>
-        <li><a class="colorMenu" onclick="closeMenu()" href="#contact">CONTATO</a></li>
+        <li><a class="colorMenu services" onclick="closeMenu()" href="#services">SERVIÇOS</a></li>
+        <li><a class="colorMenu habilidades" onclick="closeMenu()" href="#skills">HABILIDADES</a></li>
+        <li><a class="colorMenu portfolio" onclick="closeMenu()" href="#portfolio">PORTIFÓLIO</a></li>
+        <li><a class="colorMenu experience" onclick="closeMenu()" href="#experience">EXPERIENCIA</a></li>
+        <li><a class="colorMenu testimonials" onclick="closeMenu()" href="#testimonials">DEPOIMENTOS</a></li>
+        <li><a class="colorMenu contact" onclick="closeMenu()" href="#contact">CONTATO</a></li>
       </ul>
     </section>
   </section>
@@ -806,9 +807,9 @@
   <section id="contact">
     <h2>Fale <span>comigo!</span></h2>
     <form action="" method="get">
-      <input type="text" name="name" placeholder="Digite seu nome completo" >
+      <input type="text" name="name" placeholder="Digite seu nome completo" required>
       <label for="name">Digite o seu nome!</label>
-      <input type="email" name="email" placeholder="Digite seu melhor email">
+      <input type="email" name="email" placeholder="Digite seu melhor email" required>
       <label for="email">Digite um email valido!</label>
       <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
       <label for="message">Deixe sua mensagem!</label>

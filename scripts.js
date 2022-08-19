@@ -9,15 +9,16 @@ function onScroll () {
   showSkillBar()
   doThis()
   showBtnToTop()
-  // activeMenuAtCurrentSection(home)
-  // activeMenuAtCurrentSection(about)
-  // activeMenuAtCurrentSection(services)
-  // activeMenuAtCurrentSection(skills)
-  // activeMenuAtCurrentSection(portfolio)
-  // activeMenuAtCurrentSection(experience)
-  // activeMenuAtCurrentSection(testimonials)
-  // activeMenuAtCurrentSection(contact)
+  activeMenuAtCurrentSection(home)
+  activeMenuAtCurrentSection(about)
+  activeMenuAtCurrentSection(services)
+  activeMenuAtCurrentSection(skills)
+  activeMenuAtCurrentSection(portfolio)
+  activeMenuAtCurrentSection(experience)
+  activeMenuAtCurrentSection(testimonials)
+  activeMenuAtCurrentSection(contact)
 }
+
 const btnToTop = document.querySelector('#btn-to-top')
 function showBtnToTop() {
   if (scrollY > 715) {
@@ -27,9 +28,8 @@ function showBtnToTop() {
   }
 }
 
-
 function activeMenuAtCurrentSection(section) {
-  const targetLine = scrollY + innerHeight / 2
+  const targetLine = scrollY + innerHeight / 2 - 250
   
   const sectionTop = section.offsetTop
   const sectionHeight = section.offsetHeight
@@ -43,7 +43,15 @@ function activeMenuAtCurrentSection(section) {
   const sectionBounderies = sectionTopReachOrPassedTargetline && !sectionEndPassedTargetline
 
   const sectionId = section.getAttribute('id')
-  // continuar depois que fizer o site para pc
+  const menuElement = document.querySelector(`#menu a[href*=${sectionId}]`)
+
+  menuElement.classList.remove('homeColor')
+
+  if (sectionBounderies) {
+    menuElement.classList.add('homeColor')
+  } else {
+
+  }
 
 
 }
@@ -115,30 +123,7 @@ let showSkillBar = () => {
   }
 }
 
-// PORTFOLIO
-
-// const jobsArr = document.querySelectorAll('.project-box')
-// let arrayJobsArr = Array.from(jobsArr)
-
-// function filterJobs(selector) {
-//   let selectThem = selector.classList[0]
-
-//   let newArr = arrayJobsArr.filter(function(item) {
-//     return item.classList[1] == selectThem || item.classList[2] == selectThem
-//     })
-
-//   let projects = document.querySelector('#projects')
-//   projects.innerHTML = ""
-  
-//   setTimeout(() => {
-//     for (let i = 0; i < newArr.length; ++i) {
-//       let item = newArr[i]
-//       projects.append(item)
-//     }
-//   }, 1)
-// }
-
-
+// 
 
 let filterWeb = () => {
   let app = document.getElementsByClassName('app')
