@@ -870,49 +870,55 @@ footer span {
 
   /* -------------- ABOUT ------------ */
 
-#about {
-  height: 80rem;
-}
+  #about {
+    height: 80rem;
+  }
 
-#about .img{
-  position: relative;
-  margin-left: 5rem;
-  box-shadow: none;
-  top: 5rem;
-}
-#about img {
-  position: absolute;
-  z-index: 1;
-  box-shadow: 0.5px 0.5px 3px  rgba(0, 0, 0, 0.359);
-  padding: 1.5rem;
-  background-color: white;
-  border-radius: 2px;
-  width: 30rem;
+  #about .img{
+    position: relative;
+    margin-left: 5rem;
+    box-shadow: none;
+    top: 5rem;
+  }
+  #about img {
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0.5px 0.5px 3px  rgba(0, 0, 0, 0.359);
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 2px;
+    width: 30rem;
 
-}
-#about .img::before {
-  content: "";
-  width: 30rem;
-  height: 45rem;
-  background-color: gray;
-  position: absolute;
-  left: 0;
-  border-radius: 2px;
-  transform: rotate(-6deg);
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.429);
+  }
+  #about .img::before {
+    content: "";
+    width: 30rem;
+    height: 45rem;
+    background-color: gray;
+    position: absolute;
+    left: 0;
+    border-radius: 2px;
+    transform: rotate(-6deg);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.429);
 
-}
+  }
 
-#about .writting {
-  margin-top: 4rem;
-  margin-left: 40rem;
-}
+  #about .writting {
+    margin-top: 4rem;
+    margin-left: 40rem;
+  }
 
-#skills .skill-box {
-  display: flex;
+  #portfolio .count-box {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    height: 50rem;
+  }
+  
+  #portfolio .count-box p{
+    font-size: 2rem;
+  }
 }
-}
-
 
 
 
@@ -971,6 +977,10 @@ footer span {
   #contact form {
     width: 100rem ;
     
+  }
+
+  #portfolio .count-box p{
+    font-size: 3rem;
   }
 
 }
